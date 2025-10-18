@@ -16,7 +16,7 @@
       --text: #d5eaf0;
       --brand:#7f1ed4; /* MIT red-ish */
       --brand-2: #be59c9; /* accent */
-      --ring: 0 0 0 2px rgba(150,0,252,.41);
+      --ring: 0 0 0 2px rgba(150,20,252,.41);
       --shadow: 0 10px 30px rgba(0,0,0,.35);
       --glass: rgba(255,255,255,.06);
       --glass-brd: rgba(255,255,255,.15);
@@ -63,8 +63,8 @@
     .nav-actions{display:flex; gap:10px; align-items:center}
     .btn{border:1px solid var(--glass-brd); background:var(--glass); color:var(--text);
          padding:10px 14px; border-radius:12px; cursor:pointer; transition:transform .1s ease, background .2s ease, border-color .2s ease}
-    .btn:hover{transform:translateY(-1px); border-color:rgba(255,255,255,.3)}
-    .btn-primary{background:linear-gradient(180deg, rgba(198,26,26,.9), rgba(198,26,26,.7)); border-color:transparent}
+    .btn:hover{transform:translateY(-1px); border-color:rgba(100,255,255,.3)}
+    .btn-primary{background:linear-gradient(180deg, rgba(198,26,26,.9), rgba(100,26,26,.7)); border-color:transparent}
 
     /* HERO */
     .hero{padding:72px 24px 20px}
@@ -75,7 +75,7 @@
     .h1 span.gradient{background:linear-gradient(90deg, var(--brand), var(--brand-2)); -webkit-background-clip:text; background-clip:text; color:transparent}
     .kicker{color:var(--muted); max-width:60ch}
     .cta{margin-top:18px; display:flex; gap:12px; flex-wrap:wrap}
-    .hero-card{border:1px solid var(--glass-brd); background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    .hero-card{border:1px solid var(--glass-brd); background:linear-gradient(180deg, rgba(100,255,255,.06), rgba(100,255,255,.02));
       border-radius:18px; padding:16px; box-shadow:var(--shadow)}
     .hero-list{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:12px}
     .hero-item{border:1px dashed var(--glass-brd); border-radius:14px; padding:12px; background:var(--glass)}
@@ -151,8 +151,8 @@
         </div>
       </a>
       <div class="nav-actions">
-        <button class="btn" id="themeToggle" aria-label="Toggle theme">🌗 Theme</button>
-        <a class="btn btn-primary" href="#projects">🚀 Projects</a>
+        <button class="btn" id="themeToggle" aria-label="Toggle theme">Dark/Light Theme</button>
+        <a class="btn btn-primary" href="#projects">Personal Projects</a>
       </div>
     </div>
   </nav>
@@ -220,7 +220,7 @@
       </div>
       <div class="filters" role="tablist" aria-label="Project filters">
         <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
-        <button class="chip" data-filter="ai" role="tab">AI/ML</button>
+        <button class="chip" data-filter="ai" role="tab">AI</button>
         <button class="chip" data-filter="hw" role="tab">Arduino/EE</button>
         <button class="chip" data-filter="web" role="tab">Web</button>
         <button class="chip" data-filter="data" role="tab">Data</button>
@@ -398,6 +398,7 @@
   </script>
 </body>
 </html>
+
 
 
 
